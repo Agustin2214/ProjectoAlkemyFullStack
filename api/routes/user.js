@@ -6,10 +6,10 @@ const router = Router();
 
 router.get("/",userGet)
 router.post('/',[
-    check('name','El nombre es obligatorio').not().isEmpty(),
-    check('password','El password es obligatorio').isLength({min:6,
+    check('name','Name is required').not().isEmpty(),
+    check('password','Password is required').isLength({min:6,
     max:20}),
-    check('email','ingrese un email correcto').isEmail()
+    check('email','Invalid email, please enter again').isEmail()
 ],userPost)
 router.get("/allatmuser",userGetAtm)
 router.get("/total",userGetAtmTotal)

@@ -8,7 +8,7 @@ const router = Router();
 
 
 router.post("/",[
-check('password','El password es obligatorio').not().isEmpty(),
-check('email','Ingrese un email correcto').isEmail()] ,authUserPost)
+check('password','Password is required').not().isEmpty(),
+check('email','Invalid email, please enter again').isEmail()] ,authUserPost)
 
 module.exports = router 

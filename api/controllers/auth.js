@@ -19,12 +19,12 @@ console.log(email,password)
     });
 
     if (!user) {
-      return res.status(400).json({ msg: "Usuario/Password Incorrecto" });
+      return res.status(400).json({ msg: "User/Password Invalid" });
     }
 
     const validatePassword = bcryptjs.compareSync(password, user.password);
     if (!validatePassword) {
-      return res.status(400).json({ msg: "Usuario/Password Incorrecto" });
+      return res.status(400).json({ msg: "User/Password Invalid" });
     }
     const token = await generatorJWT(user.uid)
     res.json({
