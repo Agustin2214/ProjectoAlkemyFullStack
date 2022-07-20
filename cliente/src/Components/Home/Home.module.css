@@ -1,0 +1,57 @@
+.app{
+    margin-top: -50px;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.img{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    opacity: 80%;
+ 
+}
+
+.btn {
+ 
+    padding: 11px 24px;
+  
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 500px;
+   }
+   
+
+   
+
+   .txt{
+    margin-top: 50px;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.txt{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

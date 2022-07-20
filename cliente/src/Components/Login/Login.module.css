@@ -1,0 +1,35 @@
+.imglogin{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    color: white;
+    background-color: black !important;
+    border-color: rgb(104, 102, 102) !important;
+    width: 50%;
+    margin-left: 300px;
+
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+    width: 50%;
+    height: 50%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .inputs {
+      margin: auto;
+      color: red
+
+    }
+    .btn {
+    margin: auto;
+    
+  }
+}

@@ -1,0 +1,39 @@
+.tradd{
+    
+    color: green !important;
+    font-size: 20px;
+}
+
+.trsub{
+    font-size: 20px;
+    color: rgb(128, 0, 0) !important;
+}
+.rowfirst{
+    
+    color: rgb(247, 247, 247);
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    color: rgb(34, 0, 128);
+    align-items: center;
+    
+}
+
+.back{
+    background-color: rgb(0, 0, 0);
+    height:100vh;
+}
+@media screen and (max-width: 550px) {
+    .tradd{
+    
+        color: green !important;
+        font-size: 15px;
+    }
+    
+    .trsub{
+        font-size: 15px;
+        color: rgb(128, 0, 0) !important;
+    }
+}
