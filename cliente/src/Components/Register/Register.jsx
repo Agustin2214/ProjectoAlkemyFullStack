@@ -19,6 +19,7 @@ export function Register() {
     name:"",
     email:"",
     password:"",
+    passwordConfirm:""
 
 }); 
 
@@ -37,25 +38,12 @@ function handleChange(e){
    
   }
 
-  function ValidateEmail(mail) {
-    if (/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(mail)) {
-      return true;
-    }
-    return false;
-  }
 
-  function ValidarName(name) {
-    if (!/^[a-zA-Z\ áéíóúÁÉÍÓÚñÑ\s]*$/.test(name)) {
-      return false;
-    } else {
-      return true;
-    }
-  }
 
   const handleRegister = async (e) => {
     e.preventDefault();
 
-
+    if(inputs.password===inputs.passwordConfirm){
    
     try {
    
@@ -69,6 +57,12 @@ function handleChange(e){
       error.response.data.msg?alert(error.response.data.msg):
       alert(error.response.data.errors[0].msg)
     }
+  } else {
+    alert("Password confirmation error")
+  }
+
+  
+  
   }
   
 
